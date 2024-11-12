@@ -1,0 +1,209 @@
+.header-toggle { 
+    min-width: 5%;
+
+}
+#toggleTheme {
+    font-size: 1.5rem; 
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out .4s;
+    float: right;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-fundo-sobre); /* Usando a variável do tema */
+    color: var(--cor-texto-sobre); /* Usando a variável do tema */
+}
+
+
+/* Nav */
+
+header {
+    background: var(--cor-fundo-nav );
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav.navbar {
+    padding: 1rem;
+}
+
+nav .navbar-brand img {
+    height: 26px;  /* Reduz o tamanho da logo */
+}
+
+nav .nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .nav-link:hover {
+    color: #00abce !important;
+}
+
+.login-btn {
+    background-color: #0dcaf0;
+    border: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #007ed7;
+}
+
+
+.container {
+    display: flex;
+    margin-top: 80px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilo da Lista de Contatos */
+.contacts {
+    width: 30%;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    max-height: 1000px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact:hover {
+    background-color: #e9ecef;
+}
+
+.contact-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.contact-name {
+    font-weight: 500;
+}
+
+/* Estilo da Caixa de Chat */
+.chat {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 100px;
+}
+
+.chat-name {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* Estilo das Mensagens */
+.messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message.received {
+    justify-content: flex-start;
+}
+
+.message p {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.sent p {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+}
+
+.message.received p {
+    background-color: #fff;
+}
+
+/* Estilo da Caixa de Entrada de Mensagem */
+.input-box {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.input-box input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input-box button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2196F3;
+    color: white;
+    margin-top: 20px;
+}

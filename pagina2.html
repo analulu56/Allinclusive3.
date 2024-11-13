@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Inclusive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/icone.jpeg" type="icon">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- googleapis -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/contato.css">
+
+</head>
+
+<body class="light-mode">
+
+    <!-- Header com Menu e Logo -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand mx-auto" href="">
+                    <img src="img/All Inclusive.png" alt="Logo" class="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://laisandrade123.github.io/all-Inclusive/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://laisandrade123.github.io/all-Inclusive2/">Empresas</a></li>
+                        <li class="nav-item"><a class="btn btn-primary login-btn" href="https://laisandrade123.github.io/all-Inclusive/">Sair</a></li>
+                    </ul>
+                </div>
+
+                <!-- icone -->
+                <div class="header-toggle">
+                    <i id="toggleTheme" class="bi bi-sun"> </i>
+                </div>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <!-- Contêiner Principal -->
+    <div class="conteudo justify-content">
+        <!-- Lista de Contatos -->
+        <div class="contatos">
+            <div class="contato">
+                <img src="img/magalu.jpg" alt="Foto de Contato" class="contato-photo">
+                <div class="contato-name">Magalu</div>
+            </div>
+            <div class="contato">
+                <img src="img/johnson.jpg" alt="Foto de Contato" class="contato-photo">
+                <div class="contato-name">Johnson&Johnson</div>
+            </div>
+            <div class="contato">
+                <img src="img/hand.jpg" alt="Foto de Contato" class="contato-photo">
+                <div class="contato-name">Hand Talk</div>
+            </div>
+
+            <div class="contato">
+                <img src="img/cbre logo.webp" alt="Foto de Contato" class="contato-photo">
+                <div class="contato-name">CBRE</div>
+            </div>
+
+            <div class="contato">
+                <img src="img/LOGO-Drogasil.jpg" alt="Foto de Contato" class="contato-photo">
+                <div class="contato-name">Drogasil</div>
+            </div>
+
+            <div class="contato">
+                <img src="img/casasbahia.jpg" alt="Foto de Contato" class="contato-photo">
+                <div class="contato-name">Casas Bahia</div>
+            </div>
+            <!-- Adicione mais contatos conforme necessário -->
+        </div>
+
+        <!-- Caixa de Chat -->
+        <div class="chat">
+            <!-- Cabeçalho do Chat -->
+            <div class="chat-header">
+                <img src="img/natu.jpg" alt="Foto do Contato" class="chat-photo">
+                <span class="chat-name">Natura</span>
+            </div>
+
+            <!-- Caixa de Mensagens -->
+            <div class="mensagens" id="mensagens">
+                <div class="mensagem received">
+                    <p>Olá! Como posso ajudar você?</p>
+                </div>
+                <div class="mensagem sent">
+                    <p>Oi! Gostaria de saber mais sobre os serviços.</p>
+                </div>
+                <!-- Mais mensagens podem ser adicionadas dinamicamente -->
+            </div>
+
+            <!-- Caixa de Entrada de Mensagem -->
+            <div class="input-box">
+                <input type="text" id="messageInput" placeholder="Digite sua mensagem..."
+                    onkeydown="if(event.key === 'Enter'){sendMessage()}">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>© 2024 All Inclusive - Todos os Direitos Reservados</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" class="mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="" class="mx-2"><i class="bi bi-whatsapp"></i></a>
+
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="Js/contato.js"></script>
+    <script src="Js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</body>
+
+</html>

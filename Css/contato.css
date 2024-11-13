@@ -1,0 +1,149 @@
+.conteudo {
+    display: flex;
+    margin-top: 110px;
+    width: 100%;
+    height: 100vh;  /* Para garantir que a altura ocupe a tela toda */
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;  /* Centraliza o conteúdo verticalmente */
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+
+/* Estilo da Lista de Contatos */
+.contatos {
+    width: 15%;
+    background-color: #34608f;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    height: 624px;
+}
+
+.contato {
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato:hover {
+    background-color: #264f78;
+}
+
+.contato-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 0px;
+}
+
+.contato-name {
+    font-weight: 500;
+}
+
+/* Estilo da Caixa de Chat */
+.chat {
+    width: 40%;  /* Ajuste o tamanho do chat para 80% da largura da tela */
+    max-width: 600px;  /* Defina um valor máximo para o chat */
+    height: 624px;
+    display: flex;
+    flex-direction: column;
+    background-color: #cf1e1e;
+    border-radius: 9px; /* Um leve arredondamento para o chat */
+}
+
+
+.chat-header {
+    background-color: #34608f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 100px;
+}
+
+.chat-name {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* Estilo das Mensagens */
+.mensagens {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    height: 1000%;
+    background-color: #264f78;
+}
+
+.mensagem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.mensagem.sent {
+    justify-content: flex-end;
+}
+
+.mensagem.received {
+    justify-content: flex-start;
+}
+
+.mensagem p {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.mensagem.sent p {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+}
+
+.mensagem.received p {
+    background-color: #fff;
+}
+
+/* Estilo da Caixa de Entrada de Mensagem */
+.input-box {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.input-box input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input-box button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2196F3;
+    color: white;
+    margin-top: 20px;
+}

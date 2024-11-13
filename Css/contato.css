@@ -2,12 +2,14 @@
     display: flex;
     margin-top: 110px;
     width: 100%;
-    height: 100vh;  /* Para garantir que a altura ocupe a tela toda */
-    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
-    align-items: center;  /* Centraliza o conteúdo verticalmente */
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
     border-radius: 8px;
     overflow-y: hidden;
+    flex-wrap: wrap;  /* Permite que o conteúdo "quebre" para se ajustar */
 }
+
 
 /* Estilo da Lista de Contatos */
 .contatos {
@@ -78,7 +80,7 @@
     padding: 15px;
     overflow-y: auto;
     height: 1000%;
-    background-color: #264f78;
+    background-color: #363b40;
 }
 
 .mensagem {
